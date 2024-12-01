@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingHorizontal="16dp"
+              tools:context=".SignUp">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Bienvenido a Deimos"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:id="@+id/titSignUp" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Para comenzar..."
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:id="@+id/titCrearCuenta" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Crea una cuenta"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+    <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de usuario"
+            android:textSize="20sp"
+            android:id="@+id/titNombre" />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tu nombre de usuario"
+            android:id="@+id/nombreSignUp" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Correo"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/titCorreo" />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tu correo"
+            android:id="@+id/correoSignUp" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textSize="20sp"
+            android:layout_marginTop="16dp"
+            android:id="@+id/titContrasena" />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="************"
+            android:id="@+id/contrasenaSignUp" />
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textSize="15dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Crear Cuenta"
+                android:backgroundTint="@color/primary"
+                android:id="@+id/btnCrearCuenta" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="¿Ya tienes una cuenta?"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="30dp"
+                android:textSize="20dp"
+                android:id="@+id/textoCuenta" />
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15dp"
+                android:backgroundTint="@color/primary"
+                android:text="Iniciar Sesión"
+                android:id="@+id/btnIrAIniciarSesion" />
+
+</LinearLayout>
