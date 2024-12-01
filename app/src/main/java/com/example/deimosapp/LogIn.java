@@ -53,7 +53,7 @@ public class LogIn extends AppCompatActivity implements View.OnClickListener {
                 if (cursor.moveToFirst()) {
                     int idUsuario = cursor.getInt(0);
 
-                    SharedPreferences preferences = getSharedPreferences("InvenPrefs", MODE_PRIVATE);
+                    SharedPreferences preferences = getSharedPreferences("DeimosPrefs", MODE_PRIVATE);
                     SharedPreferences.Editor editor = preferences.edit();
                     editor.putInt("idUsuario", idUsuario);
                     editor.apply();

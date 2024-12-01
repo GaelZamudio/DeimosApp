@@ -19,7 +19,7 @@ public class Principal extends AppCompatActivity {
         SQLiteDatabase base = admin.getWritableDatabase();
 
 
-        SharedPreferences preferences = getSharedPreferences("InvenPrefs", MODE_PRIVATE);
+        SharedPreferences preferences = getSharedPreferences("DeimosPrefs", MODE_PRIVATE);
         int idUsuario = preferences.getInt("idUsuario", -1);
 
         if (idUsuario != -1){

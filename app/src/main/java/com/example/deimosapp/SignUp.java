@@ -80,7 +80,7 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                         if (userCursor.moveToFirst()) {
                             int idUsuario = userCursor.getInt(0);
 
-                            SharedPreferences prefs = getSharedPreferences("InvenPrefs", MODE_PRIVATE);
+                            SharedPreferences prefs = getSharedPreferences("DeimosPrefs", MODE_PRIVATE);
                             SharedPreferences.Editor editor = prefs.edit();
                             editor.putInt("idUsuario", idUsuario);
                             editor.apply();
