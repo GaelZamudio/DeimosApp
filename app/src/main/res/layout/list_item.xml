@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="10dp"
+              android:gravity="center_horizontal">
+
+    <!-- Nombre de la item -->
+    <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre del artículo"
+            android:textSize="30dp"
+            android:textColor="#212121"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+
+    <!-- Imagen de la item -->
+    <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:contentDescription="Imagen del artículo"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp" />
+
+    <!-- Descripción o pie de imagen -->
+    <TextView
+            android:id="@+id/descriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripción o pie de imagen"
+            android:textSize="14sp"
+            android:textColor="#2F2F2F"
+            android:gravity="center" />
+
+</LinearLayout>

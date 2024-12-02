@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             xmlns:tools="http://schemas.android.com/tools"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             tools:context=".Obras">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <Button
+            android:id="@+id/selectImageButton"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Aquí estarán las obras"/>
+            android:layout_height="wrap_content"
+            android:text="Seleccionar imagen desde galería"/>
 
-</FrameLayout>
+    <Button
+            android:id="@+id/uploadFromUrlButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subir imagen desde URL"/>
+
+    <ListView
+            android:id="@+id/listViewObras"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+</LinearLayout>

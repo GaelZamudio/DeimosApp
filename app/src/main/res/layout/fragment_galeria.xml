@@ -37,6 +37,7 @@
                 android:textColor="@color/white"
                 android:textAlignment="center"
                 android:backgroundTint="#0F978C"
+                android:id="@+id/btnEstrellas"
                 />
 
         <Button
@@ -50,6 +51,7 @@
                 android:textColor="@color/white"
                 android:textAlignment="center"
                 android:backgroundTint="@color/primary"
+                android:id="@+id/btnPlanetas"
                 />
 
         <Button
@@ -63,6 +65,7 @@
                 android:textColor="@color/white"
                 android:textAlignment="center"
                 android:backgroundTint="#3B19B8"
+                android:id="@+id/btnGalaxias"
                 />
 
         <TextView
