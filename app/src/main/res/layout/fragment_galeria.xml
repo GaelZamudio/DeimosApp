@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".Galeria">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32dp"
+                android:textColor="#2E2E2E"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:text="Explora con Deimos :)"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#333333"
+                android:layout_gravity="center_horizontal"
+                android:text="¡Selecciona lo que quieras explorar!"/>
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Estrellas"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:backgroundTint="#0F978C"
+                />
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Planetas"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:backgroundTint="@color/primary"
+                />
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="Galaxias"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:backgroundTint="#3B19B8"
+                />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="Esta es la galería"
+                android:id="@+id/saludo"/>
+    </LinearLayout>
+
+
+</FrameLayout>

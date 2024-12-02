@@ -20,6 +20,8 @@ public class Base extends SQLiteOpenHelper {
                 "correo TEXT UNIQUE NOT NULL, " +
                 "contrasena TEXT NOT NULL" +
                 ");");
+
+
     }
 
     @Override
