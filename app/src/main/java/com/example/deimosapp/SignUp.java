@@ -22,6 +22,12 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        // Reiniciar las preferencias cada que se ejecuta MainActivity
+        SharedPreferences preferences = getSharedPreferences("DeimosPrefs", MODE_PRIVATE);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.clear(); // Borra todas las preferencias almacenadas
+        editor.apply(); // Aplica los cambios
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
@@ -83,6 +89,9 @@ public class SignUp extends AppCompatActivity implements View.OnClickListener {
                             SharedPreferences prefs = getSharedPreferences("DeimosPrefs", MODE_PRIVATE);
                             SharedPreferences.Editor editor = prefs.edit();
                             editor.putInt("idUsuario", idUsuario);
+                            editor.putString("nombre", username);
+                            editor.putString("correo", email);
+                            editor.putString("contrasena", password);
                             editor.apply();
                         }
                         userCursor.close();

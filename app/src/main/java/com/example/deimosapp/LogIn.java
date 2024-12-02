@@ -51,17 +51,9 @@ public class LogIn extends AppCompatActivity implements View.OnClickListener {
 
                 Cursor cursor = base.rawQuery("SELECT idUsuario FROM Usuario WHERE nombre = ? AND contrasena = ?", new String[]{username, password});
                 if (cursor.moveToFirst()) {
-                    int idUsuario = cursor.getInt(0);
-
-                    SharedPreferences preferences = getSharedPreferences("DeimosPrefs", MODE_PRIVATE);
-                    SharedPreferences.Editor editor = preferences.edit();
-                    editor.putInt("idUsuario", idUsuario);
-                    editor.apply();
-
                     Toast.makeText(this, "Sesión iniciada correctamente", Toast.LENGTH_SHORT).show();
 
-                    base.close();
-                    cursor.close();
+                    guardarDatos(username, password);
 
                     Intent intent = new Intent(this, Principal.class);
                     startActivity(intent);
@@ -71,6 +63,29 @@ public class LogIn extends AppCompatActivity implements View.OnClickListener {
                     base.close();
                 }
             }
+        }
+    }
+
+    private void guardarDatos(String nombre, String contrasena) {
+        int id_usuario = 0;
+        Base admin = new Base(this, "administracion", null, 1);
+        SQLiteDatabase base = admin.getWritableDatabase();
+
+        Cursor cursor = base.rawQuery("SELECT idUsuario, correo FROM Usuario WHERE nombre = ? AND contrasena = ?", new String[]{nombre, contrasena});
+
+        if (cursor.moveToFirst()) {
+            id_usuario = cursor.getInt(0);
+            String correo = cursor.getString(1);
+
+            SharedPreferences preferences = getSharedPreferences("DeimosPrefs", MODE_PRIVATE);
+            SharedPreferences.Editor editor = preferences.edit();
+
+            editor.putInt("idUsuario", id_usuario);
+            editor.putString("nombre", nombre);
+            editor.putString("correo", correo);
+            editor.putString("contrasena", contrasena);
+
+            editor.apply();
         }
     }
 }
