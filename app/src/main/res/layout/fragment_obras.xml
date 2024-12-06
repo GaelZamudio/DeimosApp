@@ -1,23 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32dp"
+            android:textColor="#2E2E2E"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:text="Obras de la Comunidad"/>
+
+    <ListView
+            android:id="@+id/listViewObras"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
     <Button
             android:id="@+id/selectImageButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/white"
             android:text="Seleccionar imagen desde galería"/>
 
     <Button
             android:id="@+id/uploadFromUrlButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#1953B8"
+            android:textColor="@color/white"
             android:text="Subir imagen desde URL"/>
-
-    <ListView
-            android:id="@+id/listViewObras"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
 </LinearLayout>
