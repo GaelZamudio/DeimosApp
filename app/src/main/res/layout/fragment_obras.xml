@@ -21,12 +21,15 @@
 
     <Button
             android:id="@+id/selectImageButton"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
             android:backgroundTint="@color/primary"
             android:textColor="@color/white"
             android:text="Seleccionar imagen desde galería"/>
 
+    <!--
     <Button
             android:id="@+id/uploadFromUrlButton"
             android:layout_width="match_parent"
@@ -34,4 +37,5 @@
             android:backgroundTint="#1953B8"
             android:textColor="@color/white"
             android:text="Subir imagen desde URL"/>
+            -->
 </LinearLayout>

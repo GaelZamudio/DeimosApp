@@ -49,14 +49,14 @@ public class Obras extends Fragment implements View.OnClickListener {
             }
         });
 
-        // Botón para subir imagen desde URL
+        /** Botón para subir imagen desde URL
         Button uploadFromUrlButton = view.findViewById(R.id.uploadFromUrlButton);
         uploadFromUrlButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openUrlDialog();
             }
-        });
+        });**/
 
         return view;
     }
