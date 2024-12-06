@@ -10,6 +10,8 @@
             android:id="@+id/tituloObra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#2E2E2E"
             android:textSize="18sp"
             android:textStyle="bold"/>
 
@@ -26,8 +28,9 @@
             android:id="@+id/autorObra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:textSize="14sp"
-            android:textColor="#888"
+            android:textColor="#2E2E2E"
             android:layout_marginTop="5dp"/>
 
     <!-- Descripción de la obra -->
@@ -35,7 +38,20 @@
             android:id="@+id/descripcionObra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
             android:textSize="12sp"
             android:textColor="#888"
             android:layout_marginTop="5dp"/>
+
+    <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eliminar"
+            android:backgroundTint="#DC1919"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:layout_gravity="end"/>
+
+
 </LinearLayout>

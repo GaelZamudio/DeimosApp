@@ -37,8 +37,6 @@ public class Base extends SQLiteOpenHelper {
                 "FOREIGN KEY(idUsuario) REFERENCES Usuario(idUsuario), " +
                 "FOREIGN KEY(idObra) REFERENCES Obra(idObra)" +
                 ");");
-
-        insertarObra("obra 1", "Juanito", "bonito no?", "https://i0.wp.com/puppis.blog/wp-content/uploads/2022/02/abc-cuidado-de-los-gatos-min.jpg?resize=521%2C346&ssl=1");
     }
 
     @Override

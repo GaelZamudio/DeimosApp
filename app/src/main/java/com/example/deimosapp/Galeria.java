@@ -37,7 +37,8 @@ Button btnEstrellas, btnPlanetas, btnGalaxias;
         String contrasena = preferences.getString("contrasena", "");
         String correo = preferences.getString("correo", "");
         TextView saludo = view.findViewById(R.id.saludo);
-        saludo.setText("Tu usuario es: "+nombre + ", tu correo es: "+correo+" y tu contraseña es: "+contrasena);
+        //saludo.setText("Tu usuario es: "+nombre + ", tu correo es: "+correo+" y tu contraseña es: "+contrasena);
+        saludo.setText("");
 
         // Inflate the layout for this fragment
         return view;
